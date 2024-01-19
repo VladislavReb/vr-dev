@@ -1,0 +1,27 @@
+.second-section {
+  background-color: #F6F6F6;
+  padding: 50px 0;
+
+  .second-section__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    .section__title {
+      font-size: 34px;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    .section__pf {
+      max-width: 485px;
+      text-align: center;
+
+      &__info {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}

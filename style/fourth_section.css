@@ -1,0 +1,22 @@
+.fourth-section {
+  background-color: #F6F6F6;
+}
+.fourth-section .fourth-section__wrapper {
+  padding: 96px 0 112px;
+}
+.fourth-section .fourth-section__wrapper .portfolio__img {
+  margin: 99px 0 44px;
+}
+.fourth-section .fourth-section__wrapper .portfolio__link {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #070707;
+}
+.fourth-section .fourth-section__wrapper .portfolio__link:hover {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=fourth_section.css.map */

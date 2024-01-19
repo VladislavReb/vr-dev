@@ -1,0 +1,81 @@
+.fourth-section{
+  background-color: #F6F6F6;
+
+  .container {
+    overflow: visible;
+  }
+
+  .fourth-section__wrapper {
+    padding: 50px 0;
+
+    .section__title {
+      font-size: 34px;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    .portfolio {
+      padding-top: 20px;
+
+      &__link {
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #070707;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+
+      &__prev {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        & img {
+          max-width: 400px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .portfolio2 {
+      padding-top: 95px;
+
+      h4 {
+        display: block;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: underline;
+        text-align: center;
+      }
+
+      &__prev {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        &2 {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        &1 > img, &2 > img {
+          max-width: 400px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .active {
+    transform: scale(1.7);
+    transition-duration: 2s;
+    z-index: 10;
+  }
+}

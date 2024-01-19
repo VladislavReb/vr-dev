@@ -1,0 +1,25 @@
+.second-section {
+  background-color: #F6F6F6;
+  padding: 52px 0;
+}
+.second-section .second-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.second-section .second-section__wrapper .section__pf {
+  max-width: 485px;
+  text-align: center;
+}
+.second-section .second-section__wrapper .section__pf__info {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.second-section .section__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=second_section.css.map */

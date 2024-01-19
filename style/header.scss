@@ -1,0 +1,26 @@
+.header {
+  &__wrapper {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 33px 0;
+
+      &__link {
+        font-size: 18px;
+        font-weight: 600;
+        color: #828282;
+
+        &:hover, &:focus {
+          color: #070707;
+        }
+      }
+    }
+
+    .separator {
+      min-width: 100%;
+      max-height: 1px;
+      border: 1px solid #828282;
+      background-color: #828282;
+    }
+  }
+}
