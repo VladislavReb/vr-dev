@@ -1,3 +1,22 @@
+// Home page mobile header menu.
+const menuButton = document.querySelector(".mob_header__dash");
+menuButton.addEventListener('click', () => {
+    document.querySelector(".mob_header__content").style.animation = 'header 1s forwards';
+})
+
+const crossButton = document.querySelector(".mobile__links__cross");
+crossButton.addEventListener('click', () =>{
+    document.querySelector(".mob_header__content").style.animation = 'headerBack 1s forwards';
+})
+
+const mobileLinks = document.querySelectorAll(".mobile__link");
+mobileLinks.forEach(elem => {
+    elem.addEventListener('click', () => {
+        document.querySelector(".mob_header__content").style.animation = 'headerBack 1s forwards';
+    })
+})
+
+
 // Slider library logic.
 $(document).ready(function () {
     $('.autoplay').slick({
@@ -12,6 +31,67 @@ $(document).ready(function () {
         prevArrow: '.arrow_2',
         dots: false,
         speed: 500,
+        responsive: [
+            {
+                breakpoint: 1365,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    nextArrow: false,
+                    prevArrow: false,
+                }
+            },
+            {
+                breakpoint: 595,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    nextArrow: false,
+                    prevArrow: false,
+                }
+            },
+            {
+                breakpoint: 412,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    nextArrow: false,
+                    prevArrow: false,
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    nextArrow: false,
+                    prevArrow: false,
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    nextArrow: false,
+                    prevArrow: false,
+                }
+            }
+        ]
     });
 });
 

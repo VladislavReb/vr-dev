@@ -1,5 +1,5 @@
 .third-section{
-  padding: 52px 0 50px;
+  padding: 40px 0;
 
   .third-section-main {
     position: relative;
@@ -59,6 +59,10 @@
       margin: 0 35px ;
     }
 
+    .slick-track {
+      padding-top: 10px;
+    }
+
     .arrow, .arrow_2 {
       cursor: pointer;
       width: 40px;
@@ -74,6 +78,115 @@
     .arrow_2 {
       transform: rotate(180deg);
       left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .third-section {
+    .third-section-main {
+      .section__title {
+        font-size: 38px;
+      }
+
+      .section__pf__info {
+        font-size: 19px;
+      }
+
+      .skills {
+        max-width: 1150px;
+
+        &__item {
+          &__img {
+            width: 95px;
+            height: 95px;
+          }
+
+          &__p {
+            font-size: 19px;
+          }
+        }
+      }
+
+      .arrow, .arrow_2 {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1364px) {
+  .third-section{
+    .third-section-main {
+
+      .arrow, .arrow_2 {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 190px;
+      }
+
+      .arrow {
+        right: 20px;
+      }
+
+      .arrow_2 {
+        left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .third-section{
+    padding: 30px 0;
+
+    .third-section-main {
+      .section__title {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  .third-section{
+    .third-section-main {
+      .section__title {
+        font-size: 30px;
+      }
+
+      .skills {
+        max-width: 595px;
+
+        &__item {
+          min-width: 146px;
+          max-width: 146px;
+
+          &__img {
+            width: 65px;
+            height: 65px;
+          }
+
+          &__p {
+            margin-bottom: 25px;
+          }
+
+          &__stars {
+            align-self: center;
+          }
+        }
+      }
+
+      .slick-track {
+        padding-top: 8px;
+      }
+
+      .arrow, .arrow_2 {
+       display: none;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .second-section {
   background-color: #F6F6F6;
-  padding: 50px 0;
+  padding: 40px 0;
 
   .second-section__wrapper {
     display: flex;
@@ -21,6 +21,49 @@
       &__info {
         margin-bottom: 20px;
         font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .second-section {
+    padding: 50px 0;
+
+    .second-section__wrapper {
+      .section__title {
+        font-size: 38px;
+      }
+
+      .section__pf {
+        max-width: 585px;
+
+        &__info {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .second-section {
+    background-color: #F6F6F6;
+    padding: 30px 0;
+
+    .second-section__wrapper {
+      .section__title {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  .second-section {
+    .second-section__wrapper {
+      .section__title {
+        font-size: 30px;
       }
     }
   }

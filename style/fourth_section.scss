@@ -6,7 +6,7 @@
   }
 
   .fourth-section__wrapper {
-    padding: 50px 0;
+    padding: 40px 0;
 
     .section__title {
       font-size: 34px;
@@ -77,5 +77,115 @@
     transform: scale(1.7);
     transition-duration: 2s;
     z-index: 10;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .fourth-section{
+    .fourth-section__wrapper {
+      padding: 50px 0;
+
+      .section__title {
+        font-size: 38px;
+      }
+
+      .portfolio {
+        &__link {
+          font-size: 19px;
+        }
+
+        &__prev {
+
+          & img {
+            max-width: 600px;
+          }
+        }
+      }
+
+      .portfolio2 {
+        h4 {
+          font-size: 19px;
+        }
+
+        &__prev {
+          &1 > img, &2 > img {
+            max-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fourth-section{
+
+    .fourth-section__wrapper {
+      padding: 30px 0;
+
+      .section__title {
+        font-size: 30px;
+      }
+
+      .portfolio {
+        &__prev {
+          & img {
+            max-width: 350px;
+          }
+        }
+      }
+
+      .portfolio2 {
+        &__prev {
+          &1 > img, &2 > img {
+            max-width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  .fourth-section{
+    .fourth-section__wrapper {
+      .section__title {
+        font-size: 30px;
+      }
+
+      .portfolio {
+        padding-top: 20px;
+
+        &__prev {
+          padding-top: 20px;
+          gap: 25px;
+          justify-content: start;
+          overflow-x: scroll;
+
+          & img {
+            max-width: 500px;
+          }
+        }
+      }
+
+      .portfolio2 {
+        padding-top: 75px;
+
+        &__prev {
+          padding-top: 30px;
+          gap: 25px;
+          justify-content: start;
+          overflow-x: scroll;
+
+          &1 > img, &2 > img {
+            max-width: 500px;
+          }
+        }
+      }
+    }
+
+    .active {
+      transform: scale(1);
+    }
   }
 }

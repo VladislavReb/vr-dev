@@ -22,5 +22,127 @@
       border: 1px solid #828282;
       background-color: #828282;
     }
+
+    .mob_header {
+      display: none;
+    }
+
+    .mob_header__content {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    &__wrapper {
+      .nav {
+        &__link {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  .header {
+    &__wrapper {
+      .nav {
+        display: none;
+      }
+
+      .mob_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo img {
+          width: 60px;
+          height: 55px;
+          margin: 10px;
+        }
+
+        &__dash {
+          margin: 3px 10px 0 0;
+          width: 34px;
+          height: 31px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          & div {
+            width: 34px;
+            height: 3px;
+            background-color: black;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .mob_header__content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        min-width: 320px;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 45px;
+        padding: 35px 25px 55px;
+        background-color: white;
+        transform: translateY(-150%);
+        /*animation: header 2s forwards;*/ //JS code do it.
+
+        @keyframes header {
+          0% {transform: translateY(-150%);}
+          100% {transform: translateY(0);}
+        }
+
+        @keyframes headerBack {
+          0% {transform: translateY(0);}
+          100% {transform: translateY(-150%);}
+        }
+
+        & > a {
+          font-size: 19px;
+          font-weight: bold;
+          color: black;
+
+          &:hover {
+            color: orange;
+          }
+        }
+
+        & > img {
+          height: 30px;
+          width: 30px;
+          align-self: end;
+        }
+
+        .mob_header__lang {
+          display: flex;
+          gap: 7px;
+          padding-top: 15px;
+
+          & > a, p {
+            font-size: 19px;
+            font-weight: bold;
+            color: red;
+          }
+        }
+      }
+
+      .separator {
+        min-width: 100%;
+        max-height: 1px;
+        border: 1px solid #828282;
+        background-color: #828282;
+      }
+    }
   }
 }

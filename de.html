@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,10 +13,10 @@
     <div class="container">
         <div class="header__wrapper">
             <nav class="nav">
-                <a class="nav__link" href="#about_me">About me</a>
-                <a class="nav__link" href="#skills">Skills</a>
+                <a class="nav__link" href="#about_me">Über mich</a>
+                <a class="nav__link" href="#skills">Fähigkeiten</a>
                 <a class="nav__link" href="#portfolio">Portfolio</a>
-                <a class="nav__link" href="#contacts">Contacts</a>
+                <a class="nav__link" href="#contacts">Kontakte</a>
             </nav>
             <div class="mob_header">
                 <a class="mob_header__logo" href="index.html"><img src="./img/mob_logo.png" alt="/"/></a>
@@ -28,10 +28,10 @@
             </div>
             <div class="mob_header__content">
                 <img class="mobile__links__cross"src="./img/cross.png" alt="/" width="40px" height="40px">
-                <a class="mob_header__link" href="#about_me">About me</a>
-                <a class="mob_header__link" href="#skills">Skills</a>
+                <a class="mob_header__link" href="#about_me">Über mich</a>
+                <a class="mob_header__link" href="#skills">Fähigkeiten</a>
                 <a class="mob_header__link" href="#portfolio">Portfolio</a>
-                <a class="mob_header__link" href="#contacts">Contacts</a>
+                <a class="mob_header__link" href="#contacts">Kontakte</a>
                 <div class="mob_header__lang">
                     <a href="de.html">DE</a>
                     <p>|</p>
@@ -46,7 +46,7 @@
     <div class="container">
         <div class="main-info">
             <h1 class="main-info__name">Vladislav Rebcinschi</h1>
-            <p class="main-info__about">Front-end developer, 31 years old</p>
+            <p class="main-info__about">Front-end developer, 31 Jahre alt</p>
             <div class="main-info__lang">
                 <a href="de.html">DE</a>
                 <p>|</p>
@@ -61,12 +61,14 @@
 <div id="about_me" class="second-section">
     <div class="container">
         <div class="second-section__wrapper">
-            <h3 class="section__title">About me</h3>
+            <h3 class="section__title">Über mich</h3>
             <div class="section__pf">
-                <p class="section__pf__info"> Hi, I'm Vladislav – JavaScript front-end developer.</p>
-                <p class="section__pf__info">I'm studying at courses "Front-end developer" in IT-Academy.</p>
-                <p class="section__pf__info">I would be happy to develop a website for you, taking into account your
-                    requirements and using modern programming technologies.</p>
+                <p class="section__pf__info"> Hallo, ich bin Vladislav – JavaScript-Frontend-Entwickler.</p>
+                <p class="section__pf__info">Ich studiere in den Kursen „Front-End-Entwickler“ an der IT-Academy.</p>
+                <p class="section__pf__info">
+                    Gerne entwickle ich für Sie eine Website unter Berücksichtigung Ihrer
+                    Anforderungen und Einsatz moderner Programmiertechnologien.
+                </p>
             </div>
         </div>
     </div>
@@ -75,8 +77,8 @@
     <div class="container">
         <div class="third-section__wrapper">
             <div class="third-section-main">
-                <h3 class="section__title">Skills</h3>
-                <p class="section__pf__info">I have expertise in the following technologies:</p>
+                <h3 class="section__title">Fähigkeiten</h3>
+                <p class="section__pf__info">Ich verfüge über Fachkenntnisse in den folgenden Technologien:</p>
                 <div class="skills autoplay">
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/js.png" alt="/">
@@ -165,25 +167,25 @@
 <footer id="contacts" class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <h3 class="section__title">Contacts</h3>
-            <p class="footer__wrapper__pf">Want to know more or just chat?</br>You are welcome!</p>
-            <button class="footer__wrapper__bt" type="button">Send message</button>
+            <h3 class="section__title">Kontakte</h3>
+            <p class="footer__wrapper__pf">Möchten Sie mehr wissen oder einfach nur chatten?</br>Gern geschehen!</p>
+            <button class="footer__wrapper__bt" type="button">Nachricht senden</button>
             <div class="modal__background">
                 <div class="modal">
                     <div class="modal__info">
-                        <p class="modal__title">I would like to help you</p>
+                        <p class="modal__title">Ich würde dir gerne helfen</p>
                         <a class="modal__cross"><img src="./img/cross.png" alt="/"></a>
                     </div>
                     <form class="modal__form" id="my-form" action="https://formspree.io/f/xyyrzqnk" method="POST">
                         <label><input class="modal__form__name modal__input" name="Name" id="name" type="text" placeholder="Name"></label>
-                        <label><textarea class="modal__form__message" name="Message" id="message" type="text" placeholder="Message"></textarea></label>
+                        <label><textarea class="modal__form__message" name="Message" id="message" type="text" placeholder="Nachricht"></textarea></label>
                         <p class="modal__form__par">How to answer you?</p>
-                        <label><input class="modal__form__phone modal__input" name="Number" id="phoneNumber" type="tel" placeholder="Phone number"
+                        <label><input class="modal__form__phone modal__input" name="Number" id="phoneNumber" type="tel" placeholder="Telefonnummer"
                                       pattern="^+d{3}\d{3}\d{2}\d{2}\d{2}$" minlength="12"
                                       maxlength="14"></label>
                         <label><input class="modal__form__email modal__input" name="Email" id="email" type="email" placeholder="Email"
                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></label>
-                        <button class="modal__form__button" type="submit">Send message</button>
+                        <button class="modal__form__button" type="submit">Nachricht senden</button>
                     </form>
                 </div>
             </div>
