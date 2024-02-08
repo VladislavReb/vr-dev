@@ -331,3 +331,86 @@
     }
   }
 }
+
+@media screen and (min-width: 412px) and (max-width: 594px) {
+  .footer__wrapper {
+    .section__title {
+      font-size: 30px;
+    }
+
+    .modal {
+      width: 412px;
+      padding: 25px;
+
+      &__title {
+        font-size: 22px;
+      }
+
+      .modal__form {
+
+
+        &__button {
+          margin: 0 auto;
+          min-width: 350px;
+          min-height: 40px;
+          border-radius: 12px;
+          font-size: 16px;
+          line-height: 16px;
+
+          &:hover {
+            background: rgba(233, 253, 242, 0.97);
+            color: black;
+            font-weight: 600;
+          }
+
+          &:active {
+            background: rgba(10, 12, 11, 0.97);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 411px) {
+  .footer__wrapper {
+    .section__title {
+      font-size: 27px;
+    }
+
+    &__pf {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .modal {
+      width: 380px;
+      padding: 25px;
+
+      &__title {
+        font-size: 18px;
+      }
+
+      .modal__form {
+        &__button {
+          margin: 0 auto;
+          min-width: 330px;
+          min-height: 40px;
+          border-radius: 12px;
+          font-size: 16px;
+          line-height: 16px;
+
+          &:hover {
+            background: rgba(233, 253, 242, 0.97);
+            color: black;
+            font-weight: 600;
+          }
+
+          &:active {
+            background: rgba(10, 12, 11, 0.97);
+          }
+        }
+      }
+    }
+  }
+}

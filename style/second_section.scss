@@ -15,7 +15,7 @@
     }
 
     .section__pf {
-      max-width: 485px;
+      max-width: 585px;
       text-align: center;
 
       &__info {
@@ -59,11 +59,23 @@
   }
 }
 
-@media screen and (min-width: 595px) and (max-width: 767px) {
+@media screen and (min-width: 412px) and (max-width: 767px) {
   .second-section {
     .second-section__wrapper {
       .section__title {
         font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 411px) {
+  .second-section {
+    .second-section__wrapper {
+      padding: 0 10px;
+
+      .section__title {
+        font-size: 27px;
       }
     }
   }

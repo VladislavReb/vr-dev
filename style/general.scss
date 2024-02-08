@@ -37,6 +37,13 @@
   color: #65656b;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #FFFFFF;
+    color: black;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -52,6 +59,40 @@ a {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.start_background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: black;
+}
+
+.block {
+  height: 100%;
+  width: 100%;
+  transform: translateX(100%);
+  animation: slideIn 1s forwards;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -86,7 +127,6 @@ a {
   }
 }
 
-
 @media screen and (min-width: 412px) and (max-width: 594px) {
   * {
     font-size: 14px;
@@ -106,6 +146,7 @@ a {
     max-width: 380px;
   }
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 379px) {
   * {

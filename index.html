@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./img/logo_mini2.png"/>
+    <link rel="shortcut icon" href="./img/logo_mini_new.png"/>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>WEB Developer</title>
 </head>
 <body>
+<div class="start_background"></div>
+<div class="start_animation">
+    <div class="block" style="background-color: gray;"></div>
+    <div class="block" style="background-color: white;"></div>
+</div>
+
 <header class="header">
     <div class="container">
         <div class="header__wrapper">
@@ -19,24 +25,25 @@
                 <a class="nav__link" href="#contacts">Contacts</a>
             </nav>
             <div class="mob_header">
-                <a class="mob_header__logo" href="index.html"><img src="./img/mob_logo.png" alt="/"/></a>
-                <div class="mob_header__dash">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="mob_header__right">
+                    <div class="mob_header__lang">
+                        <a class="link-index" href="index.html">ENG</a>
+                        <p>|</p>
+                        <a class="link-de" href="de.html">DE</a>
+                    </div>
+                    <div class="mob_header__dash">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <div class="mob_header__content">
-                <img class="mobile__links__cross"src="./img/cross.png" alt="/" width="40px" height="40px">
+                <img class="mobile__links__cross" src="./img/cross.png" alt="/" width="40px" height="40px">
                 <a class="mob_header__link" href="#about_me">About me</a>
                 <a class="mob_header__link" href="#skills">Skills</a>
                 <a class="mob_header__link" href="#portfolio">Portfolio</a>
                 <a class="mob_header__link" href="#contacts">Contacts</a>
-                <div class="mob_header__lang">
-                    <a href="de.html">DE</a>
-                    <p>|</p>
-                    <a href="index.html">ENG</a>
-                </div>
             </div>
             <div class="separator"></div>
         </div>
@@ -46,11 +53,11 @@
     <div class="container">
         <div class="main-info">
             <h1 class="main-info__name">Vladislav Rebcinschi</h1>
-            <p class="main-info__about">Front-end developer, 31 years old</p>
+            <p class="main-info__about">JavaScript <br/>Front-end developer</p>
             <div class="main-info__lang">
-                <a href="de.html">DE</a>
+                <a class="link-de" href="de.html">DE</a>
                 <p>|</p>
-                <a href="index.html">ENG</a>
+                <a class="link-index" href="index.html">ENG</a>
             </div>
         </div>
         <div class="main-img">
@@ -63,10 +70,19 @@
         <div class="second-section__wrapper">
             <h3 class="section__title">About me</h3>
             <div class="section__pf">
-                <p class="section__pf__info"> Hi, I'm Vladislav – JavaScript front-end developer.</p>
-                <p class="section__pf__info">I'm studying at courses "Front-end developer" in IT-Academy.</p>
-                <p class="section__pf__info">I would be happy to develop a website for you, taking into account your
-                    requirements and using modern programming technologies.</p>
+                <p class="section__pf__info"> Hello! My name is Vladislav, and I am your reliable partner in the world
+                    of web development. With a deep understanding of the importance of a quality and functional website
+                    for business, I approach every project with inexhaustible enthusiasm and high motivation.</p>
+                <p class="section__pf__info">As a professional web developer, I possess all the necessary skills and
+                    knowledge to create websites that are not only visually appealing but also perform flawlessly across
+                    all devices and platforms. My goal is not just to build you a website, but to provide a solution
+                    that will contribute to your business growth and strengthen your online presence.</p>
+                <p class="section__pf__info">I am eager to work on your project. My arsenal includes advanced
+                    technologies and modern approaches to development, which allow me to bring the most ambitious ideas
+                    to life.</p>
+                <p class="section__pf__info">If you need a website that reflects the essence of your business, attracts
+                    the target audience, and contributes to increased sales, you've found what you were looking for.
+                    Contact me today, and let's create something truly magnificent together!</p>
             </div>
         </div>
     </div>
@@ -81,52 +97,42 @@
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/js.png" alt="/">
                         <p class="skills__item__p">Java Script</p>
-                        <img class="skills__item__stars" src="./img/5st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/html.png" alt="/">
                         <p class="skills__item__p">HTML</p>
-                        <img class="skills__item__stars" src="./img/5st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/css.png" alt="/">
                         <p class="skills__item__p">CSS</p>
-                        <img class="skills__item__stars" src="./img/5st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/nodejs.png" alt="/">
                         <p class="skills__item__p">Node.js</p>
-                        <img class="skills__item__stars" src="./img/4st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/reactjs.jpg" alt="/">
                         <p class="skills__item__p">React.js</p>
-                        <img class="skills__item__stars" src="./img/4st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/webpack.png" alt="/">
                         <p class="skills__item__p">WebPack</p>
-                        <img class="skills__item__stars" src="./img/4st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/PostgreSQL.png" alt="/">
                         <p class="skills__item__p">PostgreSQL</p>
-                        <img class="skills__item__stars" src="./img/3st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/postman.png" alt="/">
                         <p class="skills__item__p">Postman</p>
-                        <img class="skills__item__stars" src="./img/3st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/github.png" alt="/">
                         <p class="skills__item__p">GitHub</p>
-                        <img class="skills__item__stars" src="./img/4st_img.png" alt="/">
                     </div>
                     <div class="skills__item slide">
                         <img class="skills__item__img" src="./img/figma.png" alt="/">
                         <p class="skills__item__p">Figma</p>
-                        <img class="skills__item__stars" src="./img/4st_img.png" alt="/">
                     </div>
                 </div>
                 <img class="arrow" src="./img/arrow.png" alt="/"/>
@@ -166,7 +172,7 @@
     <div class="container">
         <div class="footer__wrapper">
             <h3 class="section__title">Contacts</h3>
-            <p class="footer__wrapper__pf">Want to know more or just chat?</br>You are welcome!</p>
+            <p class="footer__wrapper__pf">Want to know more?</br>You are welcome!</p>
             <button class="footer__wrapper__bt" type="button">Send message</button>
             <div class="modal__background">
                 <div class="modal">
@@ -175,13 +181,17 @@
                         <a class="modal__cross"><img src="./img/cross.png" alt="/"></a>
                     </div>
                     <form class="modal__form" id="my-form" action="https://formspree.io/f/xyyrzqnk" method="POST">
-                        <label><input class="modal__form__name modal__input" name="Name" id="name" type="text" placeholder="Name"></label>
-                        <label><textarea class="modal__form__message" name="Message" id="message" type="text" placeholder="Message"></textarea></label>
+                        <label><input class="modal__form__name modal__input" name="Name" id="name" type="text"
+                                      placeholder="Name"></label>
+                        <label><textarea class="modal__form__message" name="Message" id="message" type="text"
+                                         placeholder="Message"></textarea></label>
                         <p class="modal__form__par">How to answer you?</p>
-                        <label><input class="modal__form__phone modal__input" name="Number" id="phoneNumber" type="tel" placeholder="Phone number"
+                        <label><input class="modal__form__phone modal__input" name="Number" id="phoneNumber" type="tel"
+                                      placeholder="Phone number"
                                       pattern="^+d{3}\d{3}\d{2}\d{2}\d{2}$" minlength="12"
                                       maxlength="14"></label>
-                        <label><input class="modal__form__email modal__input" name="Email" id="email" type="email" placeholder="Email"
+                        <label><input class="modal__form__email modal__input" name="Email" id="email" type="email"
+                                      placeholder="Email"
                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></label>
                         <button class="modal__form__button" type="submit">Send message</button>
                     </form>

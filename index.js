@@ -1,3 +1,24 @@
+//Start animation.
+function removeBackground() {
+    document.getElementsByClassName('start_background')[0].style.display = 'none';
+}
+
+window.onload = function() {
+    setTimeout(removeBackground, 30);
+};
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let delay = 0;
+    document.querySelectorAll('.block').forEach(function(block, index) {
+        setTimeout(function() {
+            block.style.animationDelay = delay + 's';
+            delay += 0.2;
+        },  0);
+    });
+});
+
+
 // Home page mobile header menu.
 const menuButton = document.querySelector(".mob_header__dash");
 menuButton.addEventListener('click', () => {
@@ -20,7 +41,7 @@ mobileLinks.forEach(elem => {
 // Slider library logic.
 $(document).ready(function () {
     $('.autoplay').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -35,14 +56,14 @@ $(document).ready(function () {
             {
                 breakpoint: 1365,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 5,
                     slidesToScroll: 1
                 }
             },
@@ -96,7 +117,7 @@ $(document).ready(function () {
 });
 
 
-// Scale images by click.
+// Scale portfolio images by click.
 let images = document.getElementsByClassName('example');
 
 Array.from(images).forEach(function (image) {
@@ -141,5 +162,19 @@ modalBackground.addEventListener("click", function (event) {
     if (event.target === modalBackground) {
         modalBackground.style.display = "none";
         document.body.style.cssText = 'height: 100%; overflow-y: visible;';
+    }
+});
+
+
+// Active language link.
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "index.html" || currentPage === "") {
+        document.getElementsByClassName("link-index")[0].classList.add("active");
+        document.getElementsByClassName("link-index")[1].classList.add("active");
+    } if (currentPage === "de.html") {
+        document.getElementsByClassName("link-de")[0].classList.add("active");
+        document.getElementsByClassName("link-de")[1].classList.add("active");
     }
 });
