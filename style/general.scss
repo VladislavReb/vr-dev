@@ -37,11 +37,8 @@
   color: #65656b;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #FFFFFF;
-    color: black;
-  }
+body {
+  background-color: #FFFFFF !important;
 }
 
 * {
