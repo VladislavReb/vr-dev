@@ -139,7 +139,7 @@ a {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header__wrapper .nav {
     display: none;
   }
@@ -217,7 +217,7 @@ a {
     color: black;
   }
   .header__wrapper .mob_header__content > a:hover {
-    color: orange;
+    -webkit-text-stroke: 1px black;
   }
   .header__wrapper .mob_header__content > img {
     height: 30px;
@@ -382,7 +382,7 @@ a {
     width: auto;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 411px) {
+@media screen and (min-width: 320px) and (max-width: 411px) {
   .first-section .main-info {
     grid-template-columns: 210px 95px;
   }
@@ -456,7 +456,7 @@ a {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 411px) {
+@media screen and (min-width: 320px) and (max-width: 411px) {
   .second-section .second-section__wrapper {
     padding: 0 10px;
   }
@@ -677,6 +677,37 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 379px) {
+  .third-section .third-section-main .section__title {
+    font-size: 27px;
+  }
+  .third-section .third-section-main .skills {
+    max-width: 320px;
+  }
+  .third-section .third-section-main .skills__item {
+    min-width: 106px;
+    max-width: 126px;
+  }
+  .third-section .third-section-main .skills__item__img {
+    width: 65px;
+    height: 65px;
+  }
+  .third-section .third-section-main .skills__item__p {
+    margin-bottom: 25px;
+  }
+  .third-section .third-section-main .skills__item__stars {
+    align-self: center;
+  }
+  .third-section .third-section-main .slick-slide {
+    margin: 0 7px;
+  }
+  .third-section .third-section-main .slick-track {
+    padding-top: 14px;
+  }
+  .third-section .third-section-main .arrow, .third-section .third-section-main .arrow_2 {
+    display: none;
+  }
+}
 .fourth-section {
   background-color: #F6F6F6;
 }
@@ -713,10 +744,30 @@ a {
 .fourth-section .fourth-section__wrapper .portfolio__prev img {
   max-width: 400px;
   cursor: pointer;
-  filter: grayscale(100%);
 }
-.fourth-section .fourth-section__wrapper .portfolio__prev img:hover {
-  filter: none;
+.fourth-section .fourth-section__wrapper .portfolio1 {
+  padding-top: 20px;
+}
+.fourth-section .fourth-section__wrapper .portfolio1__link {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #070707;
+}
+.fourth-section .fourth-section__wrapper .portfolio1__link:hover {
+  font-weight: 600;
+}
+.fourth-section .fourth-section__wrapper .portfolio1__prev {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.fourth-section .fourth-section__wrapper .portfolio1__prev img {
+  max-width: 400px;
+  height: 100%;
+  cursor: pointer;
 }
 .fourth-section .fourth-section__wrapper .portfolio2 {
   padding-top: 95px;
@@ -742,10 +793,6 @@ a {
 .fourth-section .fourth-section__wrapper .portfolio2__prev1 > img, .fourth-section .fourth-section__wrapper .portfolio2__prev2 > img {
   max-width: 400px;
   cursor: pointer;
-  filter: grayscale(100%);
-}
-.fourth-section .fourth-section__wrapper .portfolio2__prev1 > img:hover, .fourth-section .fourth-section__wrapper .portfolio2__prev2 > img:hover {
-  filter: none;
 }
 .fourth-section .active {
   transform: scale(1.7);
@@ -767,6 +814,12 @@ a {
   .fourth-section .fourth-section__wrapper .portfolio__prev img {
     max-width: 600px;
   }
+  .fourth-section .fourth-section__wrapper .portfolio1__link {
+    font-size: 19px;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev img {
+    max-width: 600px;
+  }
   .fourth-section .fourth-section__wrapper .portfolio2 h4 {
     font-size: 19px;
   }
@@ -783,11 +836,13 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio__prev img {
     max-width: 350px;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev img {
+    max-width: 350px;
     filter: none;
   }
   .fourth-section .fourth-section__wrapper .portfolio2__prev1 > img, .fourth-section .fourth-section__wrapper .portfolio2__prev2 > img {
     max-width: 350px;
-    filter: none;
   }
 }
 @media screen and (min-width: 595px) and (max-width: 767px) {
@@ -805,7 +860,18 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio__prev img {
     max-width: 500px;
-    filter: none;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1 {
+    padding-top: 20px;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev {
+    padding-top: 20px;
+    gap: 25px;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev img {
+    max-width: 500px;
   }
   .fourth-section .fourth-section__wrapper .portfolio2 {
     padding-top: 45px;
@@ -818,7 +884,6 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio2__prev1 > img, .fourth-section .fourth-section__wrapper .portfolio2__prev2 > img {
     max-width: 500px;
-    filter: none;
   }
   .fourth-section .active {
     transform: scale(1);
@@ -839,7 +904,18 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio__prev img {
     max-width: 380px;
-    filter: none;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1 {
+    padding-top: 20px;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev {
+    padding-top: 20px;
+    gap: 15px;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev img {
+    max-width: 380px;
   }
   .fourth-section .fourth-section__wrapper .portfolio2 {
     padding-top: 45px;
@@ -852,7 +928,6 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio2__prev1 > img, .fourth-section .fourth-section__wrapper .portfolio2__prev2 > img {
     max-width: 380px;
-    filter: none;
   }
   .fourth-section .active {
     transform: scale(1);
@@ -873,7 +948,18 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio__prev img {
     max-width: 360px;
-    filter: none;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1 {
+    padding-top: 20px;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev {
+    padding-top: 20px;
+    gap: 5px;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+  .fourth-section .fourth-section__wrapper .portfolio1__prev img {
+    max-width: 360px;
   }
   .fourth-section .fourth-section__wrapper .portfolio2 {
     padding-top: 25px;
@@ -886,7 +972,6 @@ a {
   }
   .fourth-section .fourth-section__wrapper .portfolio2__prev1 > img, .fourth-section .fourth-section__wrapper .portfolio2__prev2 > img {
     max-width: 360px;
-    filter: none;
   }
   .fourth-section .active {
     transform: scale(1);
@@ -945,6 +1030,67 @@ a {
 }
 .footer__wrapper__links a img {
   max-width: 40px;
+}
+.footer__wrapper .footer_sep {
+  min-width: 100%;
+  max-height: 1px;
+  border: 1px solid #828282;
+  background-color: #828282;
+}
+.footer__wrapper__links_2 {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.footer__wrapper__links_2 span {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #828282;
+}
+.footer__wrapper__links_2 span:hover, .footer__wrapper__links_2 span:focus {
+  color: #070707;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_header {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_header .impressum_title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_header .impressum_cross {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_content .impressum_data {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  max-height: 510px;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_content .impressum_data .data_title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_content .impressum_data .impressum_data_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.footer__wrapper__links_2 .impressum__background .modal_impressum .impressum_content .impressum_data .data_par {
+  font-weight: bold;
 }
 .footer__wrapper__pf2 {
   font-size: 14px;
@@ -1021,11 +1167,6 @@ a {
   border: 1px solid #EDEDF7;
   border-radius: 8px;
 }
-.footer__wrapper .modal .modal__form .modal__input:invalid {
-  color: #FF0000;
-  border: 1px solid #FF0000;
-  outline: 0;
-}
 .footer__wrapper .modal .modal__form .modal__input::placeholder {
   padding: 0 15px 15px 0;
   font-weight: 400;
@@ -1043,7 +1184,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #000000;
-  min-height: 130px;
+  min-height: 110px;
   resize: none;
 }
 .footer__wrapper .modal .modal__form__message:focus {
@@ -1055,17 +1196,22 @@ a {
   border: 1px solid #EDEDF7;
   border-radius: 8px;
 }
-.footer__wrapper .modal .modal__form__message:invalid {
-  color: #FF0000;
-  border: 1px solid #FF0000;
-  outline: 0;
-}
 .footer__wrapper .modal .modal__form__message::placeholder {
   padding: 0 15px 15px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #65656b;
+}
+.footer__wrapper .modal .modal__form .checkbox__wrapper {
+  display: flex;
+}
+.footer__wrapper .modal .modal__form__checkbox {
+  margin-right: 10px;
+}
+.footer__wrapper .modal .modal__form .modal__call {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .footer__wrapper .modal .modal__form__par {
   font-size: 18px;
@@ -1084,13 +1230,43 @@ a {
   font-size: 18px;
   line-height: 20px;
 }
-.footer__wrapper .modal .modal__form__button:hover {
+.footer__wrapper .modal .modal__form__button:active {
+  background: rgba(10, 12, 11, 0.97);
+}
+.footer__wrapper .modal .modal__form__button:active:hover {
   background: rgba(233, 253, 242, 0.97);
   color: black;
   font-weight: 600;
 }
-.footer__wrapper .modal .modal__form__button:active {
-  background: rgba(10, 12, 11, 0.97);
+.footer__wrapper .modal .modal__form__button:disabled {
+  background-color: #828282;
+}
+.footer__wrapper .impressum__background {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer__wrapper .modal_impressum {
+  display: none;
+  margin: 0 auto;
+  width: 600px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  z-index: 1;
+  filter: none;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1131,6 +1307,9 @@ a {
   .footer__wrapper .modal .modal__form__button {
     font-size: 19px;
   }
+  .footer__wrapper .modal_impressum {
+    width: 700px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__wrapper {
@@ -1142,14 +1321,18 @@ a {
   .footer__wrapper__links {
     margin: 0 auto 30px;
   }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data {
+    max-height: 440px;
+  }
   .footer__wrapper .modal {
     width: 550px;
+    padding: 20px;
   }
   .footer__wrapper .modal__title {
     font-size: 22px;
   }
   .footer__wrapper .modal .modal__form__message {
-    min-height: 110px;
+    min-height: 70px;
   }
   .footer__wrapper .modal .modal__form__par {
     font-size: 18px;
@@ -1176,10 +1359,22 @@ a {
   .footer__wrapper .modal .modal__form__button:active {
     background: rgba(10, 12, 11, 0.97);
   }
+  .footer__wrapper .modal_impressum {
+    width: 550px;
+  }
 }
 @media screen and (min-width: 595px) and (max-width: 767px) {
   .footer__wrapper .section__title {
     font-size: 30px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_header .impressum_title {
+    font-size: 22px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data {
+    max-height: 420px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data .data_title {
+    font-size: 22px;
   }
   .footer__wrapper .modal {
     width: 525px;
@@ -1187,6 +1382,9 @@ a {
   }
   .footer__wrapper .modal__title {
     font-size: 22px;
+  }
+  .footer__wrapper .modal .modal__form__message {
+    min-height: 70px;
   }
   .footer__wrapper .modal .modal__form__button {
     margin: 0 auto;
@@ -1204,10 +1402,22 @@ a {
   .footer__wrapper .modal .modal__form__button:active {
     background: rgba(10, 12, 11, 0.97);
   }
+  .footer__wrapper .modal_impressum {
+    width: 525px;
+  }
 }
 @media screen and (min-width: 412px) and (max-width: 594px) {
   .footer__wrapper .section__title {
     font-size: 30px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_header .impressum_title {
+    font-size: 22px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data {
+    max-height: 460px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data .data_title {
+    font-size: 22px;
   }
   .footer__wrapper .modal {
     width: 412px;
@@ -1232,8 +1442,11 @@ a {
   .footer__wrapper .modal .modal__form__button:active {
     background: rgba(10, 12, 11, 0.97);
   }
+  .footer__wrapper .modal_impressum {
+    width: 412px;
+  }
 }
-@media screen and (min-width: 380px) and (max-width: 411px) {
+@media screen and (min-width: 320px) and (max-width: 411px) {
   .footer__wrapper .section__title {
     font-size: 27px;
   }
@@ -1241,16 +1454,37 @@ a {
     font-size: 16px;
     line-height: 16px;
   }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_header .impressum_title {
+    font-size: 22px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data {
+    max-height: 460px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data .data_title {
+    font-size: 22px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_header .impressum_title {
+    font-size: 18px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data {
+    max-height: 440px;
+  }
+  .footer__wrapper .impressum__background .modal_impressum .impressum_content .impressum_data .data_title {
+    font-size: 18px;
+  }
   .footer__wrapper .modal {
-    width: 380px;
+    width: 320px;
     padding: 25px;
   }
   .footer__wrapper .modal__title {
     font-size: 18px;
   }
+  .footer__wrapper .modal .modal__form__message {
+    min-height: 40px;
+  }
   .footer__wrapper .modal .modal__form__button {
     margin: 0 auto;
-    min-width: 330px;
+    min-width: 260px;
     min-height: 40px;
     border-radius: 12px;
     font-size: 16px;
@@ -1263,6 +1497,9 @@ a {
   }
   .footer__wrapper .modal .modal__form__button:active {
     background: rgba(10, 12, 11, 0.97);
+  }
+  .footer__wrapper .modal_impressum {
+    width: 320px;
   }
 }
 

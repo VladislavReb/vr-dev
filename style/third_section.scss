@@ -286,3 +286,47 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 379px) {
+  .third-section{
+    .third-section-main {
+      .section__title {
+        font-size: 27px;
+      }
+
+      .skills {
+        max-width: 320px;
+
+        &__item {
+          min-width: 106px;
+          max-width: 126px;
+
+          &__img {
+            width: 65px;
+            height: 65px;
+          }
+
+          &__p {
+            margin-bottom: 25px;
+          }
+
+          &__stars {
+            align-self: center;
+          }
+        }
+      }
+
+      .slick-slide {
+        margin: 0 7px;
+      }
+
+      .slick-track {
+        padding-top: 14px;
+      }
+
+      .arrow, .arrow_2 {
+        display: none;
+      }
+    }
+  }
+}

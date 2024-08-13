@@ -38,11 +38,35 @@
         & img {
           max-width: 400px;
           cursor: pointer;
-          filter: grayscale(100%);
+        }
+      }
+    }
 
-          &:hover {
-            filter: none;
-          }
+    .portfolio1 {
+      padding-top: 20px;
+
+      &__link {
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #070707;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+
+      &__prev {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        & img {
+          max-width: 400px;
+          height: 100%;
+          cursor: pointer;
         }
       }
     }
@@ -73,11 +97,6 @@
         &1 > img, &2 > img {
           max-width: 400px;
           cursor: pointer;
-          filter: grayscale(100%);
-
-          &:hover {
-            filter: none;
-          }
         }
       }
     }
@@ -101,6 +120,19 @@
       }
 
       .portfolio {
+        &__link {
+          font-size: 19px;
+        }
+
+        &__prev {
+
+          & img {
+            max-width: 600px;
+          }
+        }
+      }
+
+      .portfolio1 {
         &__link {
           font-size: 19px;
         }
@@ -142,6 +174,14 @@
         &__prev {
           & img {
             max-width: 350px;
+          }
+        }
+      }
+
+      .portfolio1 {
+        &__prev {
+          & img {
+            max-width: 350px;
             filter: none;
           }
         }
@@ -151,7 +191,6 @@
         &__prev {
           &1 > img, &2 > img {
             max-width: 350px;
-            filter: none;
           }
         }
       }
@@ -177,7 +216,21 @@
 
           & img {
             max-width: 500px;
-            filter: none;
+          }
+        }
+      }
+
+      .portfolio1 {
+        padding-top: 20px;
+
+        &__prev {
+          padding-top: 20px;
+          gap: 25px;
+          justify-content: start;
+          overflow-x: scroll;
+
+          & img {
+            max-width: 500px;
           }
         }
       }
@@ -193,7 +246,6 @@
 
           &1 > img, &2 > img {
             max-width: 500px;
-            filter: none;
           }
         }
       }
@@ -223,7 +275,21 @@
 
           & img {
             max-width: 380px;
-            filter: none;
+          }
+        }
+      }
+
+      .portfolio1 {
+        padding-top: 20px;
+
+        &__prev {
+          padding-top: 20px;
+          gap: 15px;
+          justify-content: start;
+          overflow-x: scroll;
+
+          & img {
+            max-width: 380px;
           }
         }
       }
@@ -239,7 +305,6 @@
 
           &1 > img, &2 > img {
             max-width: 380px;
-            filter: none;
           }
         }
       }
@@ -269,7 +334,21 @@
 
           & img {
             max-width: 360px;
-            filter: none;
+          }
+        }
+      }
+
+      .portfolio1 {
+        padding-top: 20px;
+
+        &__prev {
+          padding-top: 20px;
+          gap: 5px;
+          justify-content: start;
+          overflow-x: scroll;
+
+          & img {
+            max-width: 360px;
           }
         }
       }
@@ -285,7 +364,6 @@
 
           &1 > img, &2 > img {
             max-width: 360px;
-            filter: none;
           }
         }
       }

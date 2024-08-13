@@ -60,6 +60,83 @@
     }
   }
 
+  .footer_sep {
+    min-width: 100%;
+    max-height: 1px;
+    border: 1px solid #828282;
+    background-color: #828282;
+  }
+
+  &__links_2 {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    & span {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      color: #828282;
+
+      &:hover, &:focus {
+        color: #070707;
+      }
+    }
+
+    .impressum__background {
+      .modal_impressum {
+        .impressum_header {
+          display: flex;
+          justify-content: space-between;
+
+          .impressum_title {
+            font-size: 24px;
+            font-weight: 600;
+            padding-bottom: 15px;
+          }
+
+          .impressum_cross {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+
+        .impressum_content {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .impressum_data {
+            display: flex;
+            flex-direction: column;
+            padding-right: 10px;
+            max-height: 510px;
+
+            .data_title {
+              font-size: 24px;
+              font-weight: 600;
+              padding-bottom: 10px;
+            }
+
+            .impressum_data_content {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              padding: 5px 0;
+              overflow-y: scroll;
+              scroll-behavior: smooth;
+            }
+
+            .data_par {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &__pf2 {
     font-size: 14px;
     line-height: 17px;
@@ -68,32 +145,11 @@
   }
 
   .modal__background {
-    display: none;
-    background: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    @include modalBackground;
   }
 
   .modal {
-    display: none;
-    margin: 0 auto;
-    width: 600px;
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    cursor: default;
-    z-index: 1;
-    filter: none;
+    @include modal;
 
     &__info {
       display: flex;
@@ -131,12 +187,25 @@
 
       &__message {
         @include input_decor;
-        min-height: 130px;
+        min-height: 110px;
         resize: none;
 
         &::placeholder {
           @include input_placeholder_decor;
         }
+      }
+
+      .checkbox__wrapper {
+        display: flex;
+      }
+
+      &__checkbox {
+        margin-right: 10px;
+      }
+
+      .modal__call {
+        text-decoration: underline;
+        cursor: pointer;
       }
 
       &__par {
@@ -157,17 +226,29 @@
         font-size: 18px;
         line-height: 20px;
 
-        &:hover {
-          background: rgba(233, 253, 242, 0.97);
-          color: black;
-          font-weight: 600;
-        }
-
         &:active {
           background: rgba(10, 12, 11, 0.97);
+
+          &:hover {
+            background: rgba(233, 253, 242, 0.97);
+            color: black;
+            font-weight: 600;
+          }
+        }
+
+        &:disabled {
+          background-color: #828282;
         }
       }
     }
+  }
+
+  .impressum__background {
+    @include modalBackground;
+  }
+
+  .modal_impressum {
+    @include modal;
   }
 }
 
@@ -215,7 +296,6 @@
 
       .modal__form {
 
-
         &__message {
           min-height: 140px;
         }
@@ -229,6 +309,10 @@
 
         }
       }
+    }
+
+    .modal_impressum {
+      width: 700px;
     }
   }
 }
@@ -245,18 +329,27 @@
       margin: 0 auto 30px;
     }
 
+    .impressum__background {
+      .modal_impressum {
+        .impressum_content {
+          .impressum_data {
+            max-height: 440px;
+          }
+        }
+      }
+    }
+
     .modal {
       width: 550px;
+      padding: 20px;
 
       &__title {
         font-size: 22px;
       }
 
       .modal__form {
-
-
         &__message {
-          min-height: 110px;
+          min-height: 70px;
         }
 
         &__par {
@@ -289,6 +382,9 @@
         }
       }
     }
+    .modal_impressum {
+      width: 550px;
+    }
   }
 }
 
@@ -296,6 +392,25 @@
   .footer__wrapper {
     .section__title {
       font-size: 30px;
+    }
+
+    .impressum__background {
+      .modal_impressum {
+        .impressum_header {
+          .impressum_title {
+            font-size: 22px;
+          }
+        }
+        .impressum_content {
+          .impressum_data {
+            max-height: 420px;
+
+            .data_title {
+              font-size: 22px;
+            }
+          }
+        }
+      }
     }
 
     .modal {
@@ -307,7 +422,9 @@
       }
 
       .modal__form {
-
+        &__message {
+          min-height: 70px;
+        }
 
         &__button {
           margin: 0 auto;
@@ -329,6 +446,10 @@
         }
       }
     }
+
+    .modal_impressum {
+      width: 525px;
+    }
   }
 }
 
@@ -336,6 +457,25 @@
   .footer__wrapper {
     .section__title {
       font-size: 30px;
+    }
+
+    .impressum__background {
+      .modal_impressum {
+        .impressum_header {
+          .impressum_title {
+            font-size: 22px;
+          }
+        }
+        .impressum_content {
+          .impressum_data {
+            max-height: 460px;
+
+            .data_title {
+              font-size: 22px;
+            }
+          }
+        }
+      }
     }
 
     .modal {
@@ -348,7 +488,6 @@
 
       .modal__form {
 
-
         &__button {
           margin: 0 auto;
           min-width: 350px;
@@ -369,10 +508,13 @@
         }
       }
     }
+    .modal_impressum {
+      width: 412px;
+    }
   }
 }
 
-@media screen and (min-width: 380px) and (max-width: 411px) {
+@media screen and (min-width: 320px) and (max-width: 411px) {
   .footer__wrapper {
     .section__title {
       font-size: 27px;
@@ -383,8 +525,46 @@
       line-height: 16px;
     }
 
+    .impressum__background {
+      .modal_impressum {
+        .impressum_header {
+          .impressum_title {
+            font-size: 22px;
+          }
+        }
+        .impressum_content {
+          .impressum_data {
+            max-height: 460px;
+
+            .data_title {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .impressum__background {
+      .modal_impressum {
+        .impressum_header {
+          .impressum_title {
+            font-size: 18px;
+          }
+        }
+        .impressum_content {
+          .impressum_data {
+            max-height: 440px;
+
+            .data_title {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
     .modal {
-      width: 380px;
+      width: 320px;
       padding: 25px;
 
       &__title {
@@ -392,9 +572,14 @@
       }
 
       .modal__form {
+
+        &__message {
+          min-height: 40px;
+        }
+
         &__button {
           margin: 0 auto;
-          min-width: 330px;
+          min-width: 260px;
           min-height: 40px;
           border-radius: 12px;
           font-size: 16px;
@@ -411,6 +596,9 @@
           }
         }
       }
+    }
+    .modal_impressum {
+      width: 320px;
     }
   }
 }
