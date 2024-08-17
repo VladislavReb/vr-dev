@@ -41,12 +41,21 @@ Array.from(mobileLinks).forEach(elem => {
 // Active language link.
 document.addEventListener("DOMContentLoaded", function() {
     const currentPage = window.location.pathname.split("/").pop();
+    console.log("Current Page:", currentPage);
 
     if (currentPage === "index.html" || currentPage === "") {
-        document.getElementsByClassName("link-de")[0].classList.add("active");
-        document.getElementsByClassName("link-de")[1].classList.add("active");
-    } if (currentPage === "en.html") {
-        document.getElementsByClassName("link-en")[0].classList.add("active");
-        document.getElementsByClassName("link-en")[1].classList.add("active");
+        const deLinks = document.querySelectorAll(".link-de");
+        console.log("DE Links Found:", deLinks.length);
+        deLinks.forEach(link => {
+            console.log("Adding active class to DE link:", link);
+            link.classList.add("active");
+        });
+    } else if (currentPage === "en.html") {
+        const enLinks = document.querySelectorAll(".link-en");
+        console.log("EN Links Found:", enLinks.length);
+        enLinks.forEach(link => {
+            console.log("Adding active class to EN link:", link);
+            link.classList.add("active");
+        });
     }
 });
